@@ -1,10 +1,10 @@
-Bank Management System
+# Bank Management System
 
-Board project
+## Board project
 
 A simple Python-based Bank Management System using MySQL and file handling. The system allows users to manage accounts, deposits, withdrawals, loans, and generate admin reports.
 
-Features
+## Features
 
 Create new bank accounts
 
@@ -22,7 +22,7 @@ Generate admin reports of all accounts, account types, and loans (saved as a tex
 
 Input validation and error handling to prevent crashes
 
-Technologies Used
+## Technologies Used
 
 Python 3.x
 
@@ -32,14 +32,14 @@ File Handling – generates admin reports as BankReport.txt
 
 mysql-connector-python library for database connection
 
-Setup and Installation
+## Setup and Installation
 
-Install Python dependencies:
+### Install Python dependencies:
 
 pip install mysql-connector-python
 
 
-Update MySQL credentials in the script:
+### Update MySQL credentials in the script:
 
 con = mysql.connector.connect(
     host="localhost",
@@ -48,12 +48,12 @@ con = mysql.connector.connect(
 )
 
 
-Run the program:
+### Run the program:
 
 python bank_management_system.py
 
 
-Main Menu Options:
+## Main Menu Options:
 
 1. Create Account
 2. Deposit
@@ -66,13 +66,13 @@ Main Menu Options:
 9. Update Account Details (Change Name, Account Type, Add Loan)
 
 
-Admin Password:
+### Admin Password:
 Default password: Admin
 
-Notes
+## Notes
 
-Ensure MySQL server is running before starting the program.
+* Ensure MySQL server is running before starting the program.
 
-The program automatically creates the bankdb database and required tables if they don’t exist.
+* The program automatically creates the bankdb database and required tables if they don’t exist.
 
-Admin reports are saved as BankReport.txt in the working directory.
+* Admin reports are saved as BankReport.txt in the working directory.
